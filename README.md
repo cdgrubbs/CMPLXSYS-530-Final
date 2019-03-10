@@ -91,9 +91,10 @@ _Description of the environment in your model. Things to specify *if they apply*
 # *TODO*
  
 **_Interaction Topology_**
-# *TODO*
 
 _Description of the topology of who interacts with whom in the system. Perfectly mixed? Spatial proximity? Along a network? CA neighborhood?_
+* Planning Phase:
+  * Agents will interact in a spatial proximity to each other which will increase their level of understanding. They will be able to swap places with each other and interact with their new neighbors
  
 **_Action Sequence_**
 # *TODO*
