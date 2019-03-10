@@ -94,16 +94,23 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 _Description of the topology of who interacts with whom in the system. Perfectly mixed? Spatial proximity? Along a network? CA neighborhood?_
 * Planning Phase:
-  * Agents will interact in a spatial proximity to each other which will increase their level of understanding. They will be able to swap places with each other and interact with their new neighbors
+  * Depending on the Planning Style, agents will interact in a spatial proximity to each other which will increase their level of understanding. They will be able to swap places with each other and interact with their new neighbors
+* Coding Phase:
+  * Depending on the Coding Style, agents will interact with any other agents from time to time but will most likely be very infrequent
+* Debugging Phase:
+  * Agents will not be able to interact with each other at all
  
 **_Action Sequence_**
 # *TODO*
 
 _What does an agent, cell, etc. do on a given turn? Provide a step-by-step description of what happens on a given turn for each part of your model_
 
-1. Step 1
-2. Step 2
-3. Etc...
+* Planning Phase
+  i. If Planning Style allows for spatial communication: randomly chosen agents will communicate with one of their neigbors and their understanding may increase
+  ii. If Planning Style allows for movement: randomly chosen agents will swap with one of their neighbors
+* Coding Phase
+  i. Agents will progress
+  
 
 &nbsp; 
 ### 4) Model Parameters and Initialization
