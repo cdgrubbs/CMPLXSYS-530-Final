@@ -54,7 +54,7 @@ _Description of the environment in your model. Things to specify *if they apply*
   * Number of bugs: The number of bugs the coders have accumulated
   * Time of Planning: The time that the agents spend in the planning phase
 * _List of environment-owned methods/procedures (e.g. resource production, state change, etc.)_
-  * Phase_Change: Changes to the next phase in the order of Planning -> Coding -> Debugging
+  * Phase Change: Changes to the next phase in the order of Planning -> Coding -> Debugging
   * Communicate: Depending on the Planning Style, agents change their understanding of the project during the planning phase
   * Code: Depending on the coding style, agents progress towards finishing the progress while accumulating bugs dependant on agents levels of understanding and skill
   * Debug: Depending on number of agents and their levels of understanding and skill, decreases bugs until the program is finished
