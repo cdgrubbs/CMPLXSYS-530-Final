@@ -50,7 +50,7 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 &nbsp; 
 
-### 2) Agents
+### 2) Agents ##### *TODO*
  
  _Description of the "agents" in the system. Things to specify *if they apply*:_
  
@@ -67,13 +67,13 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 &nbsp; 
 
-### 3) Action and Interaction 
+### 3) Action and Interaction  ##### *TODO*
  
-**_Interaction Topology_**
+**_Interaction Topology_** ##### *TODO*
 
 _Description of the topology of who interacts with whom in the system. Perfectly mixed? Spatial proximity? Along a network? CA neighborhood?_
  
-**_Action Sequence_**
+**_Action Sequence_** ##### *TODO*
 
 _What does an agent, cell, etc. do on a given turn? Provide a step-by-step description of what happens on a given turn for each part of your model_
 
@@ -82,7 +82,7 @@ _What does an agent, cell, etc. do on a given turn? Provide a step-by-step descr
 3. Etc...
 
 &nbsp; 
-### 4) Model Parameters and Initialization
+### 4) Model Parameters and Initialization ##### *TODO*
 
 _Describe and list any global parameters you will be applying in your model._
 
@@ -92,12 +92,12 @@ _Provide a high level, step-by-step description of your schedule during each "ti
 
 &nbsp; 
 
-### 5) Assessment and Outcome Measures
+### 5) Assessment and Outcome Measures ##### *TODO*
 
 _What quantitative metrics and/or qualitative features will you use to assess your model outcomes?_
 
 &nbsp; 
 
-### 6) Parameter Sweep
+### 6) Parameter Sweep ##### *TODO*
 
 _What parameters are you most interested in sweeping through? What value ranges do you expect to look at for your analysis?_
