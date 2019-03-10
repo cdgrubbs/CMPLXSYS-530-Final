@@ -16,12 +16,12 @@ Cory Grubbs
 In the world of software development, it is a difficult problem to get a team of coders to work together efficiently. The problem comes from getting multiple files and functions made by multiple coders to work well together all the while they are developed simultaneously. The goal of my model is to find the best and fastest way to plan and code and entire program with no bugs.
 
 &nbsp;  
-### Justification
+### Justification ##### *TODO*
 ****
 _Short explanation on why you are using ABM_
 
 &nbsp; 
-### Main Micro-level Processes and Macro-level Dynamics of Interest
+### Main Micro-level Processes and Macro-level Dynamics of Interest ##### *TODO*
 ****
 
 _Short overview of the key processes and/or relationships you are interested in using your model to explore. Will likely be something regarding emergent behavior that arises from individual interactions_
@@ -32,7 +32,7 @@ _Short overview of the key processes and/or relationships you are interested in 
 ## Model Outline
 ****
 &nbsp; 
-### 1) Environment
+### 1) Environment ##### *TODO*
 _Description of the environment in your model. Things to specify *if they apply*:_
 
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
