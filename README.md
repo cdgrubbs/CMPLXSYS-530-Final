@@ -16,12 +16,14 @@ Cory Grubbs
 In the world of software development, it is a difficult problem to get a team of coders to work together efficiently. The problem comes from getting multiple files and functions made by multiple coders to work well together all the while they are developed simultaneously. The goal of my model is to find the best and fastest way to plan and code and entire program with no bugs.
 
 &nbsp;  
-### Justification ##### *TODO*
+### Justification
+##### *TODO*
 ****
 _Short explanation on why you are using ABM_
 
 &nbsp; 
-### Main Micro-level Processes and Macro-level Dynamics of Interest ##### *TODO*
+### Main Micro-level Processes and Macro-level Dynamics of Interest
+##### *TODO*
 ****
 
 _Short overview of the key processes and/or relationships you are interested in using your model to explore. Will likely be something regarding emergent behavior that arises from individual interactions_
@@ -32,7 +34,8 @@ _Short overview of the key processes and/or relationships you are interested in 
 ## Model Outline
 ****
 &nbsp; 
-### 1) Environment ##### *TODO*
+### 1) Environment
+##### *TODO*
 _Description of the environment in your model. Things to specify *if they apply*:_
 
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
@@ -50,7 +53,8 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 &nbsp; 
 
-### 2) Agents ##### *TODO*
+### 2) Agents
+##### *TODO*
  
  _Description of the "agents" in the system. Things to specify *if they apply*:_
  
@@ -67,13 +71,16 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 &nbsp; 
 
-### 3) Action and Interaction  ##### *TODO*
+### 3) Action and Interaction
+##### *TODO*
  
-**_Interaction Topology_** ##### *TODO*
+**_Interaction Topology_**
+##### *TODO*
 
 _Description of the topology of who interacts with whom in the system. Perfectly mixed? Spatial proximity? Along a network? CA neighborhood?_
  
-**_Action Sequence_** ##### *TODO*
+**_Action Sequence_**
+##### *TODO*
 
 _What does an agent, cell, etc. do on a given turn? Provide a step-by-step description of what happens on a given turn for each part of your model_
 
@@ -82,7 +89,8 @@ _What does an agent, cell, etc. do on a given turn? Provide a step-by-step descr
 3. Etc...
 
 &nbsp; 
-### 4) Model Parameters and Initialization ##### *TODO*
+### 4) Model Parameters and Initialization
+##### *TODO*
 
 _Describe and list any global parameters you will be applying in your model._
 
@@ -92,12 +100,14 @@ _Provide a high level, step-by-step description of your schedule during each "ti
 
 &nbsp; 
 
-### 5) Assessment and Outcome Measures ##### *TODO*
+### 5) Assessment and Outcome Measures
+##### *TODO*
 
 _What quantitative metrics and/or qualitative features will you use to assess your model outcomes?_
 
 &nbsp; 
 
-### 6) Parameter Sweep ##### *TODO*
+### 6) Parameter Sweep
+##### *TODO*
 
 _What parameters are you most interested in sweeping through? What value ranges do you expect to look at for your analysis?_
