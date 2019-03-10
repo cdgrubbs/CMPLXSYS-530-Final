@@ -43,9 +43,12 @@ _Short overview of the key processes and/or relationships you are interested in 
 _Description of the environment in your model. Things to specify *if they apply*:_
 
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
-  * A
+  * ASD
 * _Dimensionality (e.g. 1D, 2D, etc.)_
+  * The enviroment will always be a 2D grid
 * _List of environment-owned variables (e.g. resources, states, roughness)_
+  * Phase: The phase that the enviroment currently is: Planning, Coding, and Debugging
+  * hasAgent: A double array of agent pointers about which agent (if any) is on each part of the grid of the enviroment
 * _List of environment-owned methods/procedures (e.g. resource production, state change, etc.)_
 
 
