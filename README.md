@@ -101,15 +101,18 @@ _Description of the topology of who interacts with whom in the system. Perfectly
   * Agents will not be able to interact with each other at all
  
 **_Action Sequence_**
-# *TODO*
 
 _What does an agent, cell, etc. do on a given turn? Provide a step-by-step description of what happens on a given turn for each part of your model_
 
 * Planning Phase
-  i. If Planning Style allows for spatial communication: randomly chosen agents will communicate with one of their neigbors and their understanding may increase
-  ii. If Planning Style allows for movement: randomly chosen agents will swap with one of their neighbors
+  1. If Planning Style allows for spatial communication: randomly chosen agents will communicate with one of their neigbors and their understanding may increase
+  2. If Planning Style allows for movement: randomly chosen agents will swap with one of their neighbors
 * Coding Phase
-  i. Agents will progress
+  1. Agent will progress towards completion of the program, progress is based on their level of skill and understanding
+  2. Agents may or may not randomly generate a bug depending on their level of skill and understanding
+  3. If Coding Style allows for communication: The agent may interact with another agent and their understanding level will increase
+* Debugging Phase
+  1. Agents may decrease bug count depending on their level of skill and understanding
   
 
 &nbsp; 
