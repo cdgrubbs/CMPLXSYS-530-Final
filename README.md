@@ -33,6 +33,11 @@ _Short overview of the key processes and/or relationships you are interested in 
 
 ## Model Outline
 ****
+### Disclaimer
+****
+ * _My model will not only contain 1 Enviroment but will contain 3. One for each phase of development: Planning, Coding, and Debugging, and I will split each of the descriptions into 3 sections as such_
+ * _My model will also contain more than one language for it's implementation. For the purpose of speed I will be using c++ to do all of the computations to allow me to quickly run through many possibilities and allow me to not deal with the slowness of displaying graphics when it is not neccessary. For the purpose of showing graphics when it is needed, I will be using python.
+ 
 &nbsp; 
 ### 1) Environment
 # *TODO*
