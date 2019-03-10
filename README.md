@@ -45,11 +45,19 @@ _Description of the environment in your model. Things to specify *if they apply*
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
   * ASD
 * _Dimensionality (e.g. 1D, 2D, etc.)_
-  * The enviroment will always be a 2D grid
+  * The enviroment will always be a 2D grid regardless of the phase that the enviorment is in
 * _List of environment-owned variables (e.g. resources, states, roughness)_
   * Phase: The phase that the enviroment currently is: Planning, Coding, and Debugging
-  * hasAgent: A double array of agent pointers about which agent (if any) is on each part of the grid of the enviroment
+  * Has Agent: A double array of agent pointers about which agent (if any) is on each part of the grid of the enviroment
+  * Planning Style: The way that the agents communicate/Get information about the project during the planning phase
+  * Coding Style: The way that the agents code during the coding phase
+  * Number of bugs: The number of bugs the coders have accumulated
+  * Time of Planning: The time that the agents spend in the planning phase
 * _List of environment-owned methods/procedures (e.g. resource production, state change, etc.)_
+  * Phase_Change: Changes to the next phase in the order of Planning -> Coding -> Debugging
+  * Communicate: Depending on the Planning Style, agents change their understanding of the project during the planning phase
+  * Code: Depending on the coding style, agents progress towards finishing the progress while accumulating bugs dependant on agents levels of understanding and skill
+  * Debug: Depending on number of agents and their levels of understanding and skill, decreases bugs until the program is finished
 
 
 ```cpp
