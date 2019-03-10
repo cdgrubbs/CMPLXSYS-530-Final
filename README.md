@@ -43,7 +43,7 @@ _Short overview of the key processes and/or relationships you are interested in 
 _Description of the environment in your model. Things to specify *if they apply*:_
 
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
-** A
+ * A
 * _Dimensionality (e.g. 1D, 2D, etc.)_
 * _List of environment-owned variables (e.g. resources, states, roughness)_
 * _List of environment-owned methods/procedures (e.g. resource production, state change, etc.)_
