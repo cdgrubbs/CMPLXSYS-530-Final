@@ -41,7 +41,7 @@ _Description of the environment in your model. Things to specify *if they apply*
 * _List of environment-owned methods/procedures (e.g. resource production, state change, etc.)_
 
 
-```python
+```cpp
 # Include first pass of the code you are thinking of using to construct your environment
 # This may be a set of "patches-own" variables and a command in the "setup" procedure, a list, an array, or Class constructor
 # Feel free to include any patch methods/procedures you have. Filling in with pseudocode is ok! 
