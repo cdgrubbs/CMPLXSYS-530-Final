@@ -13,7 +13,7 @@ Cory Grubbs
 ### Goal 
 *****
  
- In the world of software development, it is a difficult problem to get a team of coders to work together efficiently. The problem comes from getting multiple files and functions made by multiple coders to work well together all the while they are developed simultaneously. The goal of my model is to find the best and fastest way to plan and code and entire program with no bugs.
+In the world of software development, it is a difficult problem to get a team of coders to work together efficiently. The problem comes from getting multiple files and functions made by multiple coders to work well together all the while they are developed simultaneously. The goal of my model is to find the best and fastest way to plan and code and entire program with no bugs.
 
 &nbsp;  
 ### Justification
