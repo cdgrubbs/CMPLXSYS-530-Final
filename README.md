@@ -1,6 +1,6 @@
 # Model Proposal for _[Project Name]_
 
-_Your Name_
+Cory Grubbs
 
 * Course ID: CMPLXSYS 530,
 * Course Title: Computer Modeling of Complex Systems
