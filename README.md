@@ -41,7 +41,6 @@ I am very interested how each of the decisions in the phases affect each other. 
  * _My model will also contain more than one language for it's implementation. For the purpose of speed I will be using C++ to do all of the computations to allow me to quickly run through many possibilities and allow me to not deal with the slowness of displaying graphics when it is not neccessary. For the purpose of showing graphics, when it is needed, I will be using Python._
 &nbsp; 
 ### 1) Environment
-# *TODO*
 _Description of the environment in your model. Things to specify *if they apply*:_
 
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
@@ -64,10 +63,80 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 
 ```cpp
-# Include first pass of the code you are thinking of using to construct your environment
-# This may be a set of "patches-own" variables and a command in the "setup" procedure, a list, an array, or Class constructor
-# Feel free to include any patch methods/procedures you have. Filling in with pseudocode is ok! 
-# NOTE: If using Netlogo, remove "python" from the markdown at the top of this section to get a generic code block
+class Enviroment
+{
+    public:
+
+    Enviroment(char p_style, char c_style, int num_coders, int t_planning) : planning_style(p_style), coding_style(c_style), time_planning(t_planning)
+    {
+        phase = 'p';
+        coder = new coder[sqrt(num_coders)][sqrt(num_coders)]
+        num_bugs = 0;
+        progress = 0;
+    }
+
+    void phase_change()
+    {
+        switch(phase){
+            case 'p':
+                phase = 'c';
+                break;
+            case 'c':
+                phase = 'd';
+                break;
+        }
+    }
+
+    void communicate()
+    {
+        for (int i = 0; i < sqrt(num_coders); i++)
+        {
+            for (int j = 0; j < sqrt(num_coders); j++)
+            {
+                if (/*Randomly decides if this agent communicates*/)
+                {
+                    // Randomly picks a neighboring agent
+                    
+                    /*Agent with lower understanding*/(*agents)[i][j].update_understanding(((*agents)[i][j].get_understanding() + /*neighboring agent's understanding*/) / 2.0);
+                }
+            }
+        }
+    }
+
+    void code()
+    {
+        for (int i = 0; i < sqrt(num_coders); i++)
+        {
+            for (int j = 0; j < sqrt(num_coders); j++)
+            {
+                (*agents)[i][j].update_progress();
+                (*agents)[i][j].generate_bug();
+            }
+        }
+    }
+
+    void debug()
+    {
+        for (int i = 0; i < sqrt(num_coders); i++)
+        {
+            for (int j = 0; j < sqrt(num_coders); j++)
+            {
+                (*agents)[i][j].squash_bug();
+            }
+        }
+    }
+
+
+
+    private:
+    char phase;
+    coder *agents[][];
+    char planning_style;
+    char coding_style;
+    int num_bugs;
+    int time_planning;
+    double progress;
+}
 ```
 
 &nbsp; 
@@ -90,17 +159,17 @@ _Description of the environment in your model. Things to specify *if they apply*
 
 
 ```cpp
-class coders
+class coder
 {
     public:
 
-    coders(x, y): pos_x(x), pos_y(y)
+    coder(x, y): pos_x(x), pos_y(y)
     {
         skill = set_skill();
         understanding = 0;
     }
 
-    void move(*c)
+    void move(coder *c)
     {
         swap((*c).pos_x, pos_x);
         swap((*c).pos_y, pos_y);
@@ -135,6 +204,11 @@ class coders
         {
             bugs -= 1;
         }
+    }
+
+    double get_understanding()
+    {
+        return understanding;
     }
     private:
     double skill;
