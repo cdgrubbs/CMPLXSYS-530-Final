@@ -74,7 +74,6 @@ _Description of the environment in your model. Things to specify *if they apply*
 &nbsp; 
 
 ### 2) Agents
-# *TODO*
  
  _Description of the "agents" in the system. Things to specify *if they apply*:_
  
