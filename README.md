@@ -251,6 +251,8 @@ _What does an agent, cell, etc. do on a given turn? Provide a step-by-step descr
 ### 4) Model Parameters and Initialization
 
 _Describe and list any global parameters you will be applying in your model._
+* Planning Style: A predetermined style which describes how the planning phase will be done. This determines how long it will last, whether there is a global anouncment, if the agents will be able to communicate to each other and possibly more
+* Coding Style: A predetermined style which describes how the coding phase will happen. Some styles will be more likely to generate bugs but work quicker and vice versa. This style will also determine whether agents will be able to communicate with each other during the coding phase.
 
 _Describe how your model will be initialized_
 * The set number of agents will be created and randomly put on the grid with a random level of skill and a understanding of 0
