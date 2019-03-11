@@ -48,11 +48,12 @@ _Description of the environment in your model. Things to specify *if they apply*
   * The enviroment will always be a 2D grid regardless of the phase that the enviorment is in
 * _List of environment-owned variables (e.g. resources, states, roughness)_
   * Phase: The phase that the enviroment currently is: Planning, Coding, and Debugging
-  * Has Agent: A double array of agent pointers about which agent (if any) is on each part of the grid of the enviroment
+  * Agents: A double array of agent pointers about which agent (if any) is on each part of the grid of the enviroment
   * Planning Style: The way that the agents communicate/Get information about the project during the planning phase
   * Coding Style: The way that the agents code during the coding phase
   * Number of bugs: The number of bugs the coders have accumulated
   * Time of Planning: The time that the agents spend in the planning phase
+  * Progress: Precentage of the program completed during coding phase
 * _List of environment-owned methods/procedures (e.g. resource production, state change, etc.)_
   * Phase Change: Changes to the next phase in the order of Planning -> Coding -> Debugging
   * Communicate: Depending on the Planning Style, agents change their understanding of the project during the planning phase
@@ -130,6 +131,8 @@ _What does an agent, cell, etc. do on a given turn? Provide a step-by-step descr
 _Describe and list any global parameters you will be applying in your model._
 
 _Describe how your model will be initialized_
+* The set number of agents will be created and randomly put on the grid with a random level of skill and a understanding of 0
+* If the Planning Style has a global anouncment, adjust understanding to a random number
 
 _Provide a high level, step-by-step description of your schedule during each "tick" of the model_
 
@@ -139,6 +142,9 @@ _Provide a high level, step-by-step description of your schedule during each "ti
 # *TODO*
 
 _What quantitative metrics and/or qualitative features will you use to assess your model outcomes?_
+* I will use how many ticks that the model takes to finish all three phases to rate which ones did best (Lower is better)
+* I will look at how many ticks each individual phase took
+* I will look at how many bugs were generated in the coding phase
 
 &nbsp; 
 
