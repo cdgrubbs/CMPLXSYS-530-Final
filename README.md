@@ -17,7 +17,6 @@ In the world of software development, it is a difficult problem to get a team of
 
 &nbsp;  
 ### Justification
-# *TODO*
 ****
 _Short explanation on why you are using ABM_
 
@@ -176,7 +175,6 @@ _What does an agent, cell, etc. do on a given turn? Provide a step-by-step descr
 
 &nbsp; 
 ### 4) Model Parameters and Initialization
-# *TODO*
 
 _Describe and list any global parameters you will be applying in your model._
 
@@ -185,6 +183,15 @@ _Describe how your model will be initialized_
 * If the Planning Style has a global anouncment, adjust understanding to a random number
 
 _Provide a high level, step-by-step description of your schedule during each "tick" of the model_
+* Planning
+  * Agents will communicate if spatial communication is allowed and their understanding level may change
+  * Agents may swap positions with an adjacent agent
+* Coding
+  * Agents will change the global progression level
+  * Agents will determine if they created a bug
+  * Agents will then communicate if the Coding Style allows them to, resulting with their understanding possibly being increased
+* Debugging
+  * Agents will decide if they squash a bug or not
 
 &nbsp; 
 
