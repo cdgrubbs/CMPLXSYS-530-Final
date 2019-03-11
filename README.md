@@ -75,7 +75,16 @@ _Description of the environment in your model. Things to specify *if they apply*
  _Description of the "agents" in the system. Things to specify *if they apply*:_
  
 * _List of agent-owned variables (e.g. age, heading, ID, etc.)_
+  * Skill: The level of skill they have at the start, this will not change and will be assigned randomly from the start
+  * Understanding: The level at which they they understand the program they are coding, this will be initialy 0 and may or may not change during the planning and coding phases
+  * Position: The place that they are currently at in the grid
 * _List of agent-owned methods/procedures (e.g. move, consume, reproduce, die, etc.)_
+  * Move: Moves the agent to another spot in the grid during the planning phase
+  * Set Skill: Randomly assigns a skill level
+  * Update Understanding: Takes in a value that changes their understanding
+  * Progress: Updates the global amount for how much the program has left to develop
+  * Generate Bug: Decides if a bug should be created during coding phase (Dependant on Skill and Understanding)
+  * Squash Bug: Decides if a bug should be destroyed during debugging phase (Dependant on Skill and Understanding)
 
 
 ```python
@@ -88,7 +97,6 @@ _Description of the environment in your model. Things to specify *if they apply*
 &nbsp; 
 
 ### 3) Action and Interaction
-# *TODO*
  
 **_Interaction Topology_**
 
