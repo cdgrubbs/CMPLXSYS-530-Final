@@ -21,12 +21,15 @@ In the world of software development, it is a difficult problem to get a team of
 ****
 _Short explanation on why you are using ABM_
 
+Everything that is done to develop a program is completely reliant on how the coders themselves work and plan. By using an ABM I will be able to see all of the emergant effects of changing a paticular style of planning or coding since it all boils down to the agents themselves. If I didn't use ABM I wouldn't be able to know if the style I have used actually works, since it would just be applying unsupported numbers.
+
 &nbsp; 
 ### Main Micro-level Processes and Macro-level Dynamics of Interest
-# *TODO*
 ****
 
 _Short overview of the key processes and/or relationships you are interested in using your model to explore. Will likely be something regarding emergent behavior that arises from individual interactions_
+
+I am very interested how each of the decisions in the phases affect each other. For example if I apply a short planning phase, the planning phase would obiously be shorter, but how would that affect the coding and debugging phases? What If I make the planning phase 1 tick longer, how would that affect the other phases now? I am interested in finding the optimal balance in terms of style that makes the overall developement shortest. All of this ends up relying on the style chosen and how this makes the agents interact.
 
 &nbsp; 
 
