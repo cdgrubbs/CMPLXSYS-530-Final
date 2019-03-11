@@ -189,7 +189,6 @@ _Provide a high level, step-by-step description of your schedule during each "ti
 &nbsp; 
 
 ### 5) Assessment and Outcome Measures
-# *TODO*
 
 _What quantitative metrics and/or qualitative features will you use to assess your model outcomes?_
 * I will use how many ticks that the model takes to finish all three phases to rate which ones did best (Lower is better)
