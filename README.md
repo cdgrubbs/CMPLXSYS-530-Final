@@ -91,11 +91,59 @@ _Description of the environment in your model. Things to specify *if they apply*
   * Squash Bug: Decides if a bug should be destroyed during debugging phase (Dependant on Skill and Understanding)
 
 
-```python
-# Include first pass of the code you are thinking of using to construct your agents
-# This may be a set of "turtle-own" variables and a command in the "setup" procedure, a list, an array, or Class constructor
-# Feel free to include any agent methods/procedures you have so far. Filling in with pseudocode is ok! 
-# NOTE: If using Netlogo, remove "python" from the markdown at the top of this section to get a generic code block
+```cpp
+class coders
+{
+    public:
+
+    coders(x, y): pos_x(x), pos_y(y)
+    {
+        skill = set_skill();
+        understanding = 0;
+    }
+
+    void move(*c)
+    {
+        swap((*c).pos_x, pos_x);
+        swap((*c).pos_y, pos_y);
+    }
+
+    double set_skill()
+    {
+        return // Random double between 0 and 100
+    }
+
+    void update_understanding(double under)
+    {
+        understanding = under;
+    }
+
+    void update_progress()
+    {
+        // progress += Some way of using skill and understanding to determine how much to change progress by
+    }
+
+    void generate_bug()
+    {
+        if (.75 < //Some way of using skill and understanding to determine whether bug should be increased or not)
+        {
+            bugs += 1;
+        }
+    }
+
+    void squash_bug()
+    {
+        if (.75 < //Some way of using skill and understanding to determine whether bug should be decreased or not)
+        {
+            bugs -= 1;
+        }
+    }
+    private:
+    double skill;
+    double understanding;
+    int pos_x;
+    int pos_y;
+}
 ```
 
 &nbsp; 
