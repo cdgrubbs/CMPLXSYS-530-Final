@@ -1,4 +1,4 @@
-# Model Proposal for _[Project Name]_
+# Model Proposal for Developement Planner
 
 Cory Grubbs
 
