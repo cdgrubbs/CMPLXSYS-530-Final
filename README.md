@@ -13,14 +13,14 @@ Cory Grubbs and Tia Esposito
 ### Goal 
 *****
  
-In the world of software development, it is a difficult problem to get a team of coders to work together efficiently. The problem comes from getting multiple files and functions made by multiple coders to work well together all the while they are developed simultaneously. The goal of my model is to find the best and fastest way to plan and code and entire program with no bugs.
+In the world of software development, it is a difficult and pervasive problem to get a team of coders to work together efficiently. The problem comes from getting multiple files and functions made by multiple coders to work well together all the while they are developed simultaneously. While there are platforms that allow for simultaneous editing, merger conflicts are commonplace. The goal of the model is to find the best and fastest way to plan and code and entire program with no bugs.
 
 &nbsp;  
 ### Justification
 ****
 _Short explanation on why you are using ABM_
 
-Everything that is done to develop a program is completely reliant on how the coders themselves work and plan. By using an ABM I will be able to see all of the emergant effects of changing a paticular style of planning or coding since it all boils down to the agents themselves. If I didn't use ABM I wouldn't be able to know if the style I have used actually works, since it would just be applying unsupported numbers.
+Everything that is done to develop a program is completely reliant on how the coders work and plan both together and individually. By using an ABM I will be able to see all of the emergant effects of changing a paticular style of planning or coding since it all boils down to the agents themselves. If I didn't use ABM I wouldn't be able to know if the style I have used actually works, since it would just be applying unsupported numbers.
 
 &nbsp; 
 ### Main Micro-level Processes and Macro-level Dynamics of Interest
@@ -37,8 +37,8 @@ I am very interested how each of the decisions in the phases affect each other. 
 ****
 
 ### Disclaimer
- * _My model will not only contain 1 Enviroment but will contain 3. One for each phase of development: Planning, Coding, and Debugging, and I will split each of the descriptions into 3 sections as such._
- * _My model will also contain more than one language for it's implementation. For the purpose of speed I will be using C++ to do all of the computations to allow me to quickly run through many possibilities and allow me to not deal with the slowness of displaying graphics when it is not neccessary. For the purpose of showing graphics, when it is needed, I will be using Python._
+ * _The model will not only contain 1 Enviroment but will contain 3. One for each phase of development: Planning, Coding, and Debugging, and I will split each of the descriptions into 3 sections as such._
+ * _The model will also contain more than one language for it's implementation. For the purpose of speed I will be using C++ to do all of the computations to allow me to quickly run through many possibilities and allow me to not deal with the slowness of displaying graphics when it is not neccessary. For the purpose of showing graphics, when it is needed, we will be using Python._
 &nbsp; 
 ### 1) Environment
 _Description of the environment in your model. Things to specify *if they apply*:_
@@ -50,7 +50,7 @@ _Description of the environment in your model. Things to specify *if they apply*
 * _List of environment-owned variables (e.g. resources, states, roughness)_
   * Phase: The phase that the enviroment currently is: Planning, Coding, and Debugging
   * Agents: A double array of agent pointers about which agent (if any) is on each part of the grid of the enviroment
-  * Planning Style: The way that the agents communicate/Get information about the project during the planning phase
+  * Planning Style: The way that the agents communicate information about the project during the planning phase
   * Coding Style: The way that the agents code during the coding phase
   * Number of bugs: The number of bugs the coders have accumulated
   * Time of Planning: The time that the agents spend in the planning phase
@@ -287,3 +287,4 @@ _What parameters are you most interested in sweeping through? What value ranges 
 * Parameter sweeps can be used to compare variables (skill, understanding, position) and debugging success.
 * We are also interested in varying the length of each segment (planning, programming, debugging).
 * How style interacts with both variables and segment length. 
+* The number of agents will change the results, especially dependant on communication and skill.
