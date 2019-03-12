@@ -20,7 +20,7 @@ In the world of software development, it is a difficult and pervasive problem to
 ****
 _Short explanation on why you are using ABM_
 
-Everything that is done to develop a program is completely reliant on how the coders work and plan both together and individually. By using an ABM I will be able to see all of the emergant effects of changing a paticular style of planning or coding since it all boils down to the agents themselves. If I didn't use ABM I wouldn't be able to know if the style I have used actually works, since it would just be applying unsupported numbers.
+Everything that is done to develop a program is completely reliant on how the coders work and plan both together and individually. By using an ABM I will be able to see all of the emergant effects of changing a paticular of planning or coding since it all boils down to the agents themselves. If I didn't use ABM I wouldn't be able to know if the style I have used actually works, since it would just be applying unsupported numbers.
 
 &nbsp; 
 ### Main Micro-level Processes and Macro-level Dynamics of Interest
@@ -281,10 +281,9 @@ _What quantitative metrics and/or qualitative features will you use to assess yo
 &nbsp; 
 
 ### 6) Parameter Sweep
-# *TODO*
 
 _What parameters are you most interested in sweeping through? What value ranges do you expect to look at for your analysis?_
 * Parameter sweeps can be used to compare variables (skill, understanding, position) and debugging success.
 * We are also interested in varying the length of each segment (planning, programming, debugging).
-* How style interacts with both variables and segment length. 
+* How planning and coding styles interact with both variables and segment lengths. 
 * The number of agents will change the results, especially dependant on communication and skill.
