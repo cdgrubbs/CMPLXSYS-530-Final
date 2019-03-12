@@ -163,7 +163,7 @@ class coder
 {
     public:
 
-    coder(x, y): pos_x(x), pos_y(y)
+    coder(int x, int y): pos_x(x), pos_y(y)
     {
         skill = set_skill();
         understanding = 0;
