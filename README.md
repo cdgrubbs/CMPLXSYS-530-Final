@@ -1,6 +1,6 @@
 # Model Proposal for Developement Planner
 
-Cory Grubbs
+Cory Grubbs and Tia Esposito
 
 * Course ID: CMPLXSYS 530,
 * Course Title: Computer Modeling of Complex Systems
@@ -274,9 +274,9 @@ _Provide a high level, step-by-step description of your schedule during each "ti
 ### 5) Assessment and Outcome Measures
 
 _What quantitative metrics and/or qualitative features will you use to assess your model outcomes?_
-* I will use how many ticks that the model takes to finish all three phases to rate which ones did best (Lower is better)
-* I will look at how many ticks each individual phase took
-* I will look at how many bugs were generated in the coding phase
+* How many ticks that the model takes to finish all three phases to rate which ones did best (Lower is better)
+* How many ticks each individual phase took
+* How many bugs were generated in the coding phase
 
 &nbsp; 
 
@@ -284,4 +284,6 @@ _What quantitative metrics and/or qualitative features will you use to assess yo
 # *TODO*
 
 _What parameters are you most interested in sweeping through? What value ranges do you expect to look at for your analysis?_
-* Parameter sweeps can be used to compare variables and debugging success 
+* Parameter sweeps can be used to compare variables (skill, understanding, position) and debugging success.
+* We are also interested in varying the length of each segment (planning, programming, debugging).
+* How style interacts with both variables and segment length. 
