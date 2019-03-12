@@ -44,7 +44,7 @@ I am very interested how each of the decisions in the phases affect each other. 
 _Description of the environment in your model. Things to specify *if they apply*:_
 
 * _Boundary conditions (e.g. wrapping, infinite, etc.)_
-  * ASD
+  * The boundary will be a finite square grid with no wrapping. 
 * _Dimensionality (e.g. 1D, 2D, etc.)_
   * The enviroment will always be a 2D grid regardless of the phase that the enviorment is in
 * _List of environment-owned variables (e.g. resources, states, roughness)_
