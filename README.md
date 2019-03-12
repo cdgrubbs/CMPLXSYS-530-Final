@@ -284,3 +284,4 @@ _What quantitative metrics and/or qualitative features will you use to assess yo
 # *TODO*
 
 _What parameters are you most interested in sweeping through? What value ranges do you expect to look at for your analysis?_
+* Parameter sweeps can be used to compare variables and debugging success 
