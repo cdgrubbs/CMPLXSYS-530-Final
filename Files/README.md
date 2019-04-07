@@ -29,3 +29,6 @@
     * T 1.2 F 0 T 42.1
     * F 0 T 3.2 T 5.2
     * T 1.2 T 100.0 T 6.2
+* T
+    * T num
+    * Tick and the current tick count
