@@ -16,8 +16,8 @@
     * M x y x y
     * Moving agents, x position of 1st agent to move, y position of 1st agent to move, x position of 2nd agent to move, y position of 2nd agent to move
 * P
-      * Starting Planning Phase
+    * Starting Planning Phase
 * C
-      * Starting Coding Phase
+    * Starting Coding Phase
 * D
-      * Starting Debugging Phase
+    * Starting Debugging Phase
