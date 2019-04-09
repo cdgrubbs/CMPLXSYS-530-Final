@@ -42,5 +42,5 @@
     * You should get a file like "a.exe" as an output
 * Next to run without graphics run this in terminal
     * ./a.exe planning_style coding_style num_coders x_size_of_enviroment y_size_of_enviroment time_spent_in_planning difficulty_level min_starting skill max_starting_skill
-    * Example: ./a.exe a a 10 10 4 10 a 0 100
+    * Example: ./a.exe a a 10 10 4 10 e 0 100
 * To run with graphics, in python run the code above with subproccess and then pipe the output to a string
