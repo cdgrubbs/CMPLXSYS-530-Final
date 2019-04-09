@@ -90,4 +90,4 @@ class Coder
         double skill;
         double understanding;
         bool communicated;
-}
+};
