@@ -32,3 +32,6 @@
 * T
     * T num
     * Tick and the current tick count
+* X
+    * X x y progress_increase total progress
+    * Progress made, x position of agent affecting progress, y position of agent affecting progress, change in progress that the agent made, total progress as of now
