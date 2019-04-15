@@ -35,6 +35,50 @@ class Enviroment
     // Debugging phase
     void debug();
 
+    char get_p_style()
+    {
+        return planning_style;
+    }
+
+    char get_c_style()
+    {
+        return coding_style;
+    }
+
+    int get_ticks()
+    {
+        return ticks;
+    }
+
+    int get_num_bugs()
+    {
+        return num_bugs;
+    }
+
+    int get_num_coders()
+    {
+        return num_coders;
+    }
+
+    int get_x_size()
+    {
+        return x_size;
+    }
+
+    int get_y_size()
+    {
+        return y_size;
+    }
+
+    int get_time_planning()
+    {
+        return time_planning;
+    }
+
+    char get_difficulty()
+    {
+        return difficulty;
+    }
 
     struct p_style
     {

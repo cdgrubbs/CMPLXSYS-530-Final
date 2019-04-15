@@ -89,10 +89,35 @@ void Enviroment::phase_change()
 
 void Enviroment::set_plans()
 {
-    // Change later with actual plans
-    planning_style_s.global_announcement = true;
-    planning_style_s.communication = true;
-    coding_style_c.communication_local = true;
+    switch(planning_style)
+    {
+        case 'a':
+            planning_style_s.global_announcement = true;
+            planning_style_s.communication = true;
+            break;
+        case 'b':
+            planning_style_s.global_announcement = true;
+            planning_style_s.communication = false;
+            break;
+        case 'c':
+            planning_style_s.global_announcement = false;
+            planning_style_s.communication = true;
+            break;
+        case 'd':
+            planning_style_s.global_announcement = false;
+            planning_style_s.communication = false;
+            break;
+    }
+    switch(coding_style)
+    {
+        case 'a':
+            coding_style_c.communication_local = true;
+            break;
+        case 'b':
+            coding_style_c.communication_local = false;
+            break;
+    }
+    return;
 }
 
 void Enviroment::clear_communicated()
@@ -271,6 +296,7 @@ void Enviroment::debug()
 {
     cout << "D" << endl;
     bool to_break = false;
+    int debugged_counter = 0;
     while (num_bugs != 0)
     {
         for (int i = 0; i < x_size; i++)
@@ -279,11 +305,12 @@ void Enviroment::debug()
             {
                 if (is_coder[i][j])
                 {
-                    if (coders[i][j].squash_bug())
+                    if (coders[i][j].squash_bug() || debugged_counter >= 10)
                     {
                         num_bugs--;
                         // Print Debug, x and y position of agent that squashed a bug
                         cout << "S " << i << " " << j << endl;
+                        debugged_counter = 0;
                     }
                     if (num_bugs == 0)
                     {
@@ -296,6 +323,7 @@ void Enviroment::debug()
             {
                 break;
             }
+            debugged_counter++;
         }
         update_tick(1);
     }

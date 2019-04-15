@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <cmath>
 #include <iostream>
 #include "coder.h"
 
@@ -24,18 +25,34 @@ void Coder::init_skill(double skill_min, double skill_max)
 
 void Coder::update_understanding(double understanding_in, bool global_anouncement)
 {
-    double new_understanding;
+    double new_understanding = understanding;
     if (global_anouncement)
     {
-        // Change these later
-        new_understanding = understanding + 10;
+        new_understanding = understanding + (rand() % 40);
         cout << "G " << x << " " << y << " " << new_understanding << endl;
         understanding = new_understanding;
     }
     else
     {
-        // Change these later
-        new_understanding = understanding + rand() % 10;
+        if (understanding == 0 && new_understanding == 0)
+        {
+            new_understanding = rand() % 10;
+        }
+
+        if (understanding < understanding_in)
+        {
+            new_understanding = understanding * (1 + (understanding_in - understanding) / understanding_in);
+        }
+        else
+        {
+            new_understanding = understanding * (1 + ((understanding - understanding_in) / understanding) / 5.0);
+        }
+
+        if (new_understanding > 100)
+        {
+            new_understanding = 100;
+        }
+        
         cout << "U " << x << " " << y << " " << new_understanding << endl;
         understanding = new_understanding;
     }
@@ -44,23 +61,34 @@ void Coder::update_understanding(double understanding_in, bool global_anouncemen
 
 double Coder::update_progress(char dif)
 {
-    // Change Later just to test
-    return 1;
+    int scale_factor = 0;
+    double scale_min = 0;
     // Do the stuff
     switch(dif)
     {
         case 'e':
+            scale_factor = 25;
+            scale_min = 0;
             break;
         case 'm':
+            scale_factor = 50;
+            scale_min = 25;
             break;
         case 'h':
+            scale_factor = 75;
+            scale_min = 50;
             break;
     }
+    if (skill + understanding > static_cast<double>((rand() % scale_factor)) + scale_min)
+    {
+        return 1 + (rand() % 2);
+    }
+    return .25;
 }
 
 bool Coder::generate_bug()
 {
-    if (skill + understanding < static_cast<double>(rand() % 9) * 30.0) // Tweak later
+    if (skill + understanding < static_cast<double>(rand() % 8) * 30.0) // Tweak later
     {
         return true;
     }
@@ -69,7 +97,7 @@ bool Coder::generate_bug()
 
 bool Coder::squash_bug()
 {
-    if (skill + understanding > static_cast<double>(rand() % 9) * 25.0) // Tweak later
+    if (skill + understanding > (static_cast<double>(rand() % 8) + 1) * 25.0) // Tweak later
     {
         return true;
     }
