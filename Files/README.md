@@ -44,3 +44,12 @@
     * ./a.exe planning_style coding_style num_coders x_size_of_enviroment y_size_of_enviroment time_spent_in_planning difficulty_level min_starting skill max_starting_skill
     * Example: ./a.exe a a 10 10 4 10 e 0 100
 * To run with graphics, in python run the code above with subproccess and then pipe the output to a string
+
+# Data To Extract
+* Number of Coders Vs Bugs
+* Number of Coders Vs Ticks
+* Planning Styles Averages Vs Bugs
+* Planning Styles Averages Vs Ticks
+* Coding Styles Averages Vs Bugs
+* Coding Styles Averages Vs Ticks
+* Coding Styles Paired with Planning Styles Vs Ticks
